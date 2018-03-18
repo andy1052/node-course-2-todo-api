@@ -1,5 +1,8 @@
-const {ObjectID} = require('mongodb');
+require('./config/config');
 
+
+
+const {ObjectID} = require('mongodb');
 const _ = require('lodash');
 const express = require('express');
 const bodyParser = require('body-parser'); //keep a space between library imports and local file imports.
