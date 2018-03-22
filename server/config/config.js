@@ -5,8 +5,9 @@ if (env === 'development' || env === 'test') {
 	var envConfig = config[env];//variable to access property you want.
 
 	Object.keys(envConfig).forEach((key) => { //loop through keys
-		process.env[key] = envConfig[key];
-	});
+	 	process.env[key] = envConfig[key];
+	 });
+	
 }
 
 // if (env === 'development') {

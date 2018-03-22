@@ -11,7 +11,7 @@ beforeEach(populateUsers);
 beforeEach(populateTodos);
 
 
-describe('POST / todos', () => {
+describe('POST /todos', () => {
 	it ('should create a new todo', (done) => {
 
 		let text = 'Test todo text';

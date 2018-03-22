@@ -1,7 +1,5 @@
 require('./config/config');
 
-
-
 const {ObjectID} = require('mongodb');
 const _ = require('lodash');
 const express = require('express');
@@ -13,7 +11,7 @@ const {User} = require('./models/user');
 const {authenticate} = require('./middleware/authenticate');
 
 let app = express();
-const port = process.env.PORT || 3000; //deploying to heroku.
+const port = process.env.PORT; //deploying to heroku.
 
 app.use(bodyParser.json()); //body-parse middleware
 
